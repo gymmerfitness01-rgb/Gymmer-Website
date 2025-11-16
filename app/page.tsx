@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100/50 px-10 py-5">
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100/50 px-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
              {/* Left - Logo */}
@@ -135,7 +135,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="px-100 sm:px-6 lg:px-8 pt-20 sm:pt-16 pb-16 md:pb-24">
+      <section className="px-4 sm:px-6 lg:px-8 pt-20 sm:pt-32 pb-16 md:pb-24">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-gray-100/60 px-4 py-1.5 rounded-full mb-8">
             <span className="text-xs text-gray-600 font-medium">Introducing Gymmer</span>
