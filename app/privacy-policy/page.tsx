@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
       <div className="px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-5xl font-bold text-gray-900 mb-8 tracking-tight">Privacy Policy</h1>
-          
+
           <div className="text-gray-600 space-y-8 leading-relaxed">
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Introduction</h2>
@@ -89,12 +89,12 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Contact Us</h2>
               <p>
-                If you have questions about this Privacy Policy or our privacy practices, please contact us at privacy@gymmer.app
+                If you have questions about this Privacy Policy or our privacy practices, please contact us at gymmerfitness01@gmail.com
               </p>
             </section>
 
             <div className="pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-500">Last Updated: December 2024</p>
+              <p className="text-sm text-gray-500">Last Updated: January 2025</p>
             </div>
           </div>
         </div>

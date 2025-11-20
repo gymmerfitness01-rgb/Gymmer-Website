@@ -21,7 +21,7 @@ export default function TermsAndConditions() {
       <div className="px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-5xl font-bold text-gray-900 mb-8 tracking-tight">Terms and Conditions</h1>
-          
+
           <div className="text-gray-600 space-y-8 leading-relaxed">
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Agreement to Terms</h2>
@@ -101,7 +101,7 @@ export default function TermsAndConditions() {
             </section>
 
             <div className="pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-500">Last Updated: December 2024</p>
+              <p className="text-sm text-gray-500">Last Updated: January 2025</p>
             </div>
           </div>
         </div>
