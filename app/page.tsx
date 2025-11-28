@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Calendar, Menu, X, Bot, Zap, Users, BarChart3, Settings, PersonStanding } from 'lucide-react'
 import Link from 'next/link'
+import Image from "next/image";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -56,10 +57,18 @@ export default function Home() {
           <div className="flex items-center justify-between h-25">
             {/* Left - Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 bg-black rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">G</span>
+              <div className="w-16 h-16 rounded-lg overflow-hidden flex items-center justify-center">
+                <Image
+                  src="/gymmer_logo.jpg"
+                  alt="logo"
+                  width={90}
+                  height={90}
+                  className="object-cover"
+                />
               </div>
-              <span className="text-base font-semibold text-gray-900">Gymmer</span>
+
+
+              {/* <span className="text-base font-semibold text-gray-900">Gymmer</span> */}
             </div>
 
             {/* Center - Menu */}
@@ -272,10 +281,15 @@ export default function Home() {
             {/* Brand */}
             <div className="flex flex-col md:max-w-xs">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-base">G</span>
+                <div className="w-16 h-16 rounded-lg overflow-hidden flex items-center justify-center">
+                  <Image
+                    src="/gymmer_logo.jpg"
+                    alt="logo"
+                    width={90}
+                    height={90}
+                    className="object-cover"
+                  />
                 </div>
-                <span className="font-bold text-lg text-gray-900">Gymmer</span>
               </div>
 
               <p className="text-sm text-gray-600 mb-2">
