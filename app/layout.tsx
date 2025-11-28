@@ -7,25 +7,25 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Gymmer - Your Smart AI Fitness Companion',
-  description: 'AI-powered fitness app with real-time pose detection, meal scanning, personalized workouts, and intelligent tracking tools.',
+  title: 'Gymmer: Fitness Tracking App',
+  description: 'Gymmer is built with a robust clean architecture foundation, delivering secure and seamless access through Firebase-powered authentication, login/signup flows, and complete user profile management. The app features a dynamic fitness calendar that helps users track streaks and stay consistent, alongside a comprehensive suite of fitness tools designed to support daily workout routines. Gymmer also includes an AI-powered chatbot that provides fast, interactive, and context-aware fitness assistance to guide users anytime they need it.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/gymmer_logo_green_background.jpg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/gymmer_logo_green_background.jpg',
         media: '(prefers-color-scheme: dark)',
       },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      // {
+      //   url: '/icon.svg',
+      //   type: 'image/svg+xml',
+      // },
     ],
-    apple: '/apple-icon.png',
+    // apple: '/apple-icon.png',
   },
 }
 
