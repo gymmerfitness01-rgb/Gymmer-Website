@@ -189,15 +189,16 @@ export default function Home() {
 
           {/* Hero Image Placeholder */}
           <div className="relative mt-16">
-            <div className="bg-gray-100 rounded-3xl aspect-video flex items-center justify-center overflow-hidden">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Zap className="w-8 h-8 text-gray-400" />
-                </div>
-                <p className="text-gray-500 text-sm">App showcase</p>
-              </div>
+            <div className="rounded-3xl border border-gray-300 aspect-video overflow-hidden">
+              <video
+                src="/launch_video.mp4"
+                controls
+                playsInline
+                className="w-full h-full object-cover rounded-3xl"
+              />
             </div>
           </div>
+
         </div>
       </section>
 
