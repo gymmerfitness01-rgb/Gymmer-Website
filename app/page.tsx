@@ -192,6 +192,9 @@ export default function Home() {
             <div className="rounded-3xl border border-gray-300 aspect-video overflow-hidden">
               <video
                 src="/launch_video.mp4"
+                autoPlay
+                muted
+                loop
                 controls
                 playsInline
                 className="w-full h-full object-cover rounded-3xl"
