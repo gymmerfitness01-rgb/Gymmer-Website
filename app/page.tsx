@@ -9,6 +9,9 @@ import Image from "next/image";
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  const PLAY_STORE_URL =
+    'https://play.google.com/store/apps/details?id=app.gymmer.fitness'
+
   const features = [
     {
       icon: <Calendar className="w-6 h-6" />,
@@ -112,9 +115,11 @@ export default function Home() {
                 Contact Us
               </button>
 
-              <Button className="bg-black hover:bg-gray-900 text-white text-sm h-9 px-6 rounded-full">
-                Download
-              </Button>
+              <Link href={PLAY_STORE_URL} target="_blank">
+                <Button className="bg-black hover:bg-gray-900 text-white text-sm h-9 px-6 rounded-full cursor-pointer">
+                  Download
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -155,9 +160,11 @@ export default function Home() {
                 Contact Us
               </button>
               <div className="px-4 pt-2 pb-2">
-                <Button className="w-full bg-black hover:bg-gray-900 text-white rounded-full">
-                  Download
-                </Button>
+                <Link href={PLAY_STORE_URL} target="_blank">
+                  <Button className="w-full bg-black hover:bg-gray-900 text-white rounded-full cursor-pointer">
+                    Download
+                  </Button>
+                </Link>
               </div>
             </div>
           )}
@@ -182,9 +189,11 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" className="bg-black hover:bg-gray-900 text-white text-base h-12 rounded-full">
-              Download App
-            </Button>
+            <Link href={PLAY_STORE_URL} target="_blank">
+              <Button size="lg" className="bg-black hover:bg-gray-900 text-white text-base h-12 rounded-full cursor-pointer">
+                Download App
+              </Button>
+            </Link>
           </div>
 
           {/* Hero Image Placeholder */}
@@ -264,9 +273,11 @@ export default function Home() {
             Start your fitness journey with Gymmer and achieve your goals. Download today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-black hover:bg-gray-900 text-white text-base h-12 rounded-full">
-              Download App
-            </Button>
+            <Link href={PLAY_STORE_URL} target="_blank">
+              <Button size="lg" className="bg-black hover:bg-gray-900 text-white text-base h-12 rounded-full cursor-pointer">
+                Download App
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -324,7 +335,7 @@ export default function Home() {
                     <Link href="/pricing" className="hover:text-gray-900 transition">Pricing</Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-gray-900 transition">Download</Link>
+                    <Link href="https://play.google.com/store/apps/details?id=app.gymmer.fitness" target='' className="hover:text-gray-900 transition">Download</Link>
                   </li>
                 </ul>
               </div>
