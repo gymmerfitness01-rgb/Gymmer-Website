@@ -52,6 +52,35 @@ export default function Home() {
     setIsMenuOpen(false)
   }
 
+  const faqs = [
+    {
+      question: 'Is Gymmer free to use?',
+      answer:
+        'Yes. Gymmer offers essential fitness tools, calendar tracking, and AI assistance for free.'
+    },
+    {
+      question: 'Do I need gym equipment to use Gymmer?',
+      answer:
+        'No. Gymmer works for both gym workouts and bodyweight or home training routines.'
+    },
+    {
+      question: 'Is the AI chatbot reliable?',
+      answer:
+        'The AI assistant is designed to give general fitness guidance, workout tips, and diet suggestions.'
+    },
+    {
+      question: 'Will my data be safe?',
+      answer:
+        'Yes. We take user privacy seriously and do not sell or misuse your personal data.'
+    },
+    {
+      question: 'When are community and analytics features launching?',
+      answer:
+        'These features are currently under development and will be released in upcoming updates.'
+    }
+  ]
+
+
   return (
     <div className="bg-white">
       {/* Navigation */}
@@ -239,29 +268,118 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Section */}
-      <section id="why" className="px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Why Gymmer ?</h2>
-            <p className="text-lg text-gray-600">Built on science, powered by AI</p>
+      {/* Why Gymmer Section */}
+      <section
+        id="why"
+        className="px-4 sm:px-6 lg:px-8 py-20 md:py-28 bg-white"
+      >
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+          {/* Left Content */}
+          <div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Why Gymmer works.
+            </h2>
+
+            <p className="text-lg text-gray-600 mb-10 max-w-xl">
+              Gymmer is built to remove guesswork from fitness.
+              Every feature is designed to help you train smarter, stay consistent,
+              and see real progress.
+            </p>
+
+            <Link
+              href={PLAY_STORE_URL}
+              target="_blank"
+              className="inline-block"
+            >
+              <Button className="bg-black hover:bg-gray-900 text-white h-11 px-8 rounded-full">
+                Download Gymmer
+              </Button>
+            </Link>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-8">
-            {[
-              { title: 'Organized', desc: 'Plan and track your workouts effortlessly with the fitness calendar' },
-              { title: 'Smart', desc: 'Get instant guidance and answers with your AI fitness assistant' },
-              { title: 'Practical', desc: 'Use accurate fitness tools to calculate, measure, and stay on track' },
-              { title: 'Supportive', desc: 'Your AI companion helps you stay consistent and motivated every day' }
-            ].map((item, idx) => (
-              <div key={idx} className="p-8 border-l-2 border-gray-200">
-                <h3 className="font-semibold text-gray-900 mb-2 text-lg">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
+          {/* Right Cards */}
+          <div className="grid sm:grid-cols-2 gap-6">
+
+            <div className="p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition">
+              <Zap className="w-6 h-6 text-gray-900 mb-4" />
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Built for Consistency
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Plan workouts, track routines, and never lose momentum.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition">
+              <Bot className="w-6 h-6 text-gray-900 mb-4" />
+              <h3 className="font-semibold text-gray-900 mb-2">
+                AI-Powered Guidance
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Get instant answers for workouts, diet, and fitness doubts.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition">
+              <Settings className="w-6 h-6 text-gray-900 mb-4" />
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Practical Tools
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                BMI, calories, body fat & 1RM — all in one place.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition">
+              <BarChart3 className="w-6 h-6 text-gray-900 mb-4" />
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Progress-Focused
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Designed to help you measure progress, not just log workouts.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="px-4 sm:px-6 lg:px-8 py-20 md:py-28 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-gray-600">
+              Everything you need to know about Gymmer
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <details
+                key={index}
+                className="group border border-gray-100 rounded-2xl p-6 cursor-pointer transition hover:border-gray-200"
+              >
+                <summary className="flex items-center justify-between text-gray-900 font-semibold text-base list-none">
+                  {faq.question}
+                  <span className="ml-4 transition-transform group-open:rotate-45 text-xl">
+                    +
+                  </span>
+                </summary>
+
+                <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </details>
             ))}
           </div>
         </div>
       </section>
+
+
 
       {/* CTA Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 md:py-28 bg-gray-50">
