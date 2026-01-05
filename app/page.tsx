@@ -119,30 +119,24 @@ export default function Home() {
                 Why Gymmer?
               </button>
 
-              <Link
-                href="/privacy-policy"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              <button
+                onClick={() => { }}
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
               >
-                Privacy Policy
-              </Link>
-
-              <Link
-                href="/terms-and-condition"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Terms & Conditions
-              </Link>
-            </div>
-
-
-            {/* Right - Contact + Download */}
-            <div className="hidden md:flex items-center gap-8">
+                <Link href="/blogs" className="hover:text-gray-900 transition">Blogs</Link>
+              </button>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
               >
                 Contact Us
               </button>
+            </div>
+
+
+            {/* Right - Contact + Download */}
+            <div className="hidden md:flex items-center gap-8">
+
 
               <Link href={PLAY_STORE_URL} target="_blank">
                 <Button className="bg-black hover:bg-gray-900 text-white text-sm h-9 px-6 rounded-full cursor-pointer">
@@ -169,20 +163,9 @@ export default function Home() {
               <button onClick={() => scrollToSection('why')} className="block w-full text-left px-4 py-3 text-sm text-gray-600 hover:text-gray-900">
                 Why Gymmer ?
               </button>
-
-              <Link
-                href="/privacy-policy"
-                className="block w-full text-left px-4 py-3 text-sm text-gray-600 hover:text-gray-900"
-              >
-                Privacy Policy
-              </Link>
-
-              <Link
-                href="/terms-and-condition"
-                className="block w-full text-left px-4 py-3 text-sm text-gray-600 hover:text-gray-900"
-              >
-                Terms & Conditions
-              </Link>
+              <button onClick={() => { }} className="block w-full text-left px-4 py-3 text-sm text-gray-600 hover:text-gray-900">
+                <Link href="/blogs" className="hover:text-gray-900 transition">Blogs</Link>
+              </button>
 
 
               <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-4 py-3 text-sm text-gray-600 hover:text-gray-900">
@@ -292,7 +275,7 @@ export default function Home() {
               target="_blank"
               className="inline-block"
             >
-              <Button className="bg-black hover:bg-gray-900 text-white h-11 px-8 rounded-full">
+              <Button className="bg-black hover:bg-gray-900 text-white h-11 px-8 rounded-full cursor-pointer">
                 Download Gymmer
               </Button>
             </Link>
@@ -466,7 +449,7 @@ export default function Home() {
                     <Link href="/about" className="hover:text-gray-900 transition">About</Link>
                   </li>
                   <li>
-                    <Link href="/blog" className="hover:text-gray-900 transition">Blog</Link>
+                    <Link href="/blogs" className="hover:text-gray-900 transition">Blogs</Link>
                   </li>
                 </ul>
               </div>
