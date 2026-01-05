@@ -126,7 +126,7 @@ export default function BlogsPage() {
                                                 {blog.title}
                                             </h3>
 
-                                            <p className="mt-3 line-clamp-3 text-sm text-gray-600">
+                                            <p className="mt-1 line-clamp-3 text-sm text-gray-600">
                                                 {blog.content}
                                             </p>
 
@@ -169,6 +169,9 @@ export default function BlogsPage() {
                                     <div>
                                         <p className="text-sm font-medium leading-snug">
                                             {blog.title}
+                                        </p>
+                                        <p className="text-sm font-light line-clamp-1 text-gray-400">
+                                            {blog.content}
                                         </p>
                                         <p className="mt-1 text-xs text-gray-400">
                                             {new Date(blog.created_at).toDateString()}
