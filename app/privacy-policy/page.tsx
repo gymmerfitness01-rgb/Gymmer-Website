@@ -55,6 +55,17 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">Data Retention</h2>
+              <p className="mb-4">We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, including:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>As long as your account is active</li>
+                <li>To comply with legal, tax, or regulatory requirements</li>
+                <li>Send you updates, promotional materials, and customer support</li>
+                <li>To resolve disputes and enforce our agreements</li>
+              </ul>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Data Security</h2>
               <p>
                 We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is 100% secure.
